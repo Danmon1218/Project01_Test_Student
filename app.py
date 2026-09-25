@@ -1,6 +1,8 @@
 import os
 import json
 from flask import Flask, render_template, jsonify, request
+from informed import greedy_best_first, a_star
+from uniformed import dfs, bfs, ucs, ids
 
 app = Flask(__name__)
 
@@ -47,12 +49,50 @@ def search():
     goal = payload.get("goal", "")
     algorithm = payload.get("algorithm", "")
 
+
+    #load the map data 
+    data = load_map_data()
+    graph = data["graph"]
+    loc = data["locations"]
+
+
+
+
+    cost = 0
+    nodes_expanded = 0 
+
+    if algorithm == "bfs":
+        # print(graph.get("Bakersfield, CA").get("Barstow, CA"))
+        # print(graph.get("graph"))
+        # testing = "Bakersfield, CA"
+        # print(graph.get(testing , {}))
+        results = bfs(graph,start, goal)
+    elif algorithm == "dfs":
+        results = dfs(graph,start, goal)
+    elif algorithm == "ucs":
+        results = ucs(graph,start,goal)
+    elif algorithm == "ids":
+        results = ids(graph,start,goal)
+    elif algorithm == "greedy":
+
+        data = load_map_data()
+        graph = dict(data["graph"])
+        graph["locations"] = data["locations"]
+        results = greedy_best_first(graph,start,goal)
+    elif algorithm == "astar":
+        data = load_map_data()
+        graph = dict(data["graph"])
+        graph["locations"] = data["locations"]
+        results = a_star(graph,start,goal)
+        
+
+
     return jsonify({
         "status": "ready",
         "message": f"Deployment server active. Request received for algorithm '{algorithm}' from '{start}' to '{goal}'.",
-        "path": [],
-        "cost": 0,
-        "nodes_expanded": 0
+        "path": results["path"],
+        "cost": results["distance"],
+        "nodes_expanded": results["expanded"]
     })
 
 

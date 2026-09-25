@@ -20,14 +20,15 @@ def bfs(graph, start, goal):
         if node == goal:
             return {"path": path, "expanded": expanded, "distance": round(dist, 2)}
             
+
+ 
         # Sort neighbors alphabetically for deterministic tie-breaking
-        neighbors = sorted(graph.get("connections", {}).get(node, []), key=lambda x: x["node"])
-        for neighbor in neighbors:
-            n_name = neighbor["node"]
-            n_dist = neighbor["distance"]
+        nearby = graph.get(node, {}) 
+        neighbors = sorted(nearby)
+        for n_name in neighbors:
             if n_name not in visited:
                 visited.add(n_name)
-                queue.append((n_name, path + [n_name], dist + n_dist))
+                queue.append((n_name, path + [n_name], dist + nearby.get(n_name)))
                 
     return {"path": None, "expanded": expanded, "distance": 0.0}
 
@@ -56,12 +57,14 @@ def dfs(graph, start, goal):
             return {"path": path, "expanded": expanded, "distance": round(dist, 2)}
             
         # Reverse sort neighbors so they are popped in alphabetical order
-        neighbors = sorted(graph.get("connections", {}).get(node, []), key=lambda x: x["node"], reverse=True)
-        for neighbor in neighbors:
-            n_name = neighbor["node"]
-            n_dist = neighbor["distance"]
+
+
+
+        nearby = graph.get(node, {})
+        neighbors = sorted(nearby)
+        for n_name in neighbors:
             if n_name not in visited:
-                stack.append((n_name, path + [n_name], dist + n_dist))
+                stack.append((n_name, path + [n_name], dist + nearby.get(n_name)))
                 
     return {"path": None, "expanded": expanded, "distance": 0.0}
 
@@ -89,13 +92,14 @@ def ucs(graph, start, goal):
         if node == goal:
             return {"path": path, "expanded": expanded, "distance": round(cost, 2)}
             
-        neighbors = sorted(graph.get("connections", {}).get(node, []), key=lambda x: x["node"])
-        for neighbor in neighbors:
-            n_name = neighbor["node"]
-            n_dist = neighbor["distance"]
+
+
+        nearby = graph.get(node, {})
+        neighbors = sorted(nearby)
+        for n_name in neighbors:
             if n_name not in visited:
                 counter += 1
-                heapq.heappush(pq, (cost + n_dist, counter, n_name, path + [n_name]))
+                heapq.heappush(pq, (cost + nearby.get(n_name), counter, n_name, path + [n_name]))
                 
     return {"path": None, "expanded": expanded, "distance": 0.0}
 
@@ -113,12 +117,11 @@ def ids(graph, start, goal):
         if limit <= 0:
             return None
             
-        neighbors = sorted(graph.get("connections", {}).get(node, []), key=lambda x: x["node"])
-        for neighbor in neighbors:
-            n_name = neighbor["node"]
-            n_dist = neighbor["distance"]
+        nearby = graph.get(node)
+        neighbors = sorted(nearby)
+        for n_name in neighbors:
             if n_name not in visited_path:
-                res = dls(n_name, path + [n_name], dist + n_dist, limit - 1, visited_path | {n_name})
+                res = dls(n_name, path + [n_name], dist + nearby.get(n_name), limit - 1, visited_path | {n_name})
                 if res is not None:
                     return res
         return None
