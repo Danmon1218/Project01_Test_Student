@@ -1,211 +1,197 @@
 {
-  "region": "Illinois, USA",
+  "region": "California, USA",
   "total_cities": 22,
-  "total_edges": 35,
+  "total_edges": 28,
   "locations": {
-    "Chicago, IL": {
-      "lat": 41.8755616,
-      "lon": -87.6244212
+    "Los Angeles, CA": {
+      "lat": 34.0536909,
+      "lon": -118.242766
     },
-    "Aurora, IL": {
-      "lat": 41.7571701,
-      "lon": -88.3147539
+    "Santa Clarita, CA": {
+      "lat": 34.4127963,
+      "lon": -118.5538088
     },
-    "Naperville, IL": {
-      "lat": 41.7728699,
-      "lon": -88.1479278
+    "Palmdale, CA": {
+      "lat": 34.5793131,
+      "lon": -118.11711
     },
-    "Joliet, IL": {
-      "lat": 41.5263603,
-      "lon": -88.0840212
+    "Victorville, CA": {
+      "lat": 34.5361067,
+      "lon": -117.2911565
     },
-    "Rockford, IL": {
-      "lat": 42.2713945,
-      "lon": -89.093966
+    "Hesperia, CA": {
+      "lat": 34.4220358,
+      "lon": -117.3046869
     },
-    "Springfield, IL": {
-      "lat": 39.7990175,
-      "lon": -89.6439575
+    "San Bernardino, CA": {
+      "lat": 34.8253019,
+      "lon": -116.0833144
     },
-    "Peoria, IL": {
-      "lat": 40.6938609,
-      "lon": -89.5891008
+    "Riverside, CA": {
+      "lat": 33.9824949,
+      "lon": -117.374238
     },
-    "Elgin, IL": {
-      "lat": 42.03726,
-      "lon": -88.2810994
+    "Oxnard, CA": {
+      "lat": 34.1976308,
+      "lon": -119.180381
     },
-    "Waukegan, IL": {
-      "lat": 42.3602273,
-      "lon": -87.8318164
+    "Burbank, CA": {
+      "lat": 34.1812089,
+      "lon": -118.307201
     },
-    "Champaign, IL": {
-      "lat": 40.1164841,
-      "lon": -88.2430932
+    "Long Beach, CA": {
+      "lat": 33.7690164,
+      "lon": -118.191604
     },
-    "Bloomington, IL": {
-      "lat": 40.4797828,
-      "lon": -88.9939147
+    "Indio, CA": {
+      "lat": 33.7192808,
+      "lon": -116.2188054
     },
-    "Decatur, IL": {
-      "lat": 39.8454163,
-      "lon": -88.9524151
+    "El Centro, CA": {
+      "lat": 32.792,
+      "lon": -115.563051
     },
-    "Evanston, IL": {
-      "lat": 42.0470043,
-      "lon": -87.6846053
+    "El Cajon, CA": {
+      "lat": 32.7947731,
+      "lon": -116.962526
     },
-    "Schaumburg, IL": {
-      "lat": 42.0333608,
-      "lon": -88.083406
+    "Escondido, CA": {
+      "lat": 33.1216751,
+      "lon": -117.0814849
     },
-    "Arlington Heights, IL": {
-      "lat": 42.0811563,
-      "lon": -87.9802164
+    "Oceanside, CA": {
+      "lat": 33.1958696,
+      "lon": -117.379483
     },
-    "Bolingbrook, IL": {
-      "lat": 41.7003302,
-      "lon": -88.0717708
+    "Menifee, CA": {
+      "lat": 33.6863987,
+      "lon": -117.1778599
     },
-    "Palatine, IL": {
-      "lat": 42.1105502,
-      "lon": -88.0434304
+    "Lancaster, CA": {
+      "lat": 34.6981064,
+      "lon": -118.1366153
     },
-    "Skokie, IL": {
-      "lat": 42.0262972,
-      "lon": -87.7521069
+    "Barstow, CA": {
+      "lat": 34.8986215,
+      "lon": -117.0244313
     },
-    "Des Plaines, IL": {
-      "lat": 42.0415823,
-      "lon": -87.8873916
+    "Bakersfield, CA": {
+      "lat": 35.3738712,
+      "lon": -119.019463
     },
-    "Orland Park, IL": {
-      "lat": 41.630663,
-      "lon": -87.8536288
+    "Delano, CA": {
+      "lat": 35.7688425,
+      "lon": -119.247053
     },
-    "Kankakee, IL": {
-      "lat": 41.1253903,
-      "lon": -87.848682
+    "Ridgecrest, CA": {
+      "lat": 35.6247594,
+      "lon": -117.6712633
     },
-    "DeKalb, IL": {
-      "lat": 41.8903447,
-      "lon": -88.7713953
+    "Santa Maria, CA": {
+      "lat": 34.9531295,
+      "lon": -120.435857
     }
   },
   "graph": {
-    "Chicago, IL": {
-      "Evanston, IL": 14.1,
-      "Skokie, IL": 14.38,
-      "Des Plaines, IL": 20.1,
-      "Naperville, IL": 30.93,
-      "Joliet, IL": 44.54,
-      "Orland Park, IL": 26.33
+    "Los Angeles, CA": {
+      "Santa Clarita, CA": 34.65,
+      "Burbank, CA": 11.23,
+      "Long Beach, CA": 24.1,
+      "Oxnard, CA": 62.47,
+      "Riverside, CA": 55.02
     },
-    "Aurora, IL": {
-      "Naperville, IL": 9.31,
-      "DeKalb, IL": 30.59,
-      "Joliet, IL": 22.48
+    "Santa Clarita, CA": {
+      "Los Angeles, CA": 34.65,
+      "Palmdale, CA": 35.35,
+      "Lancaster, CA": 44.87
     },
-    "Naperville, IL": {
-      "Chicago, IL": 30.93,
-      "Schaumburg, IL": 26.31,
-      "Aurora, IL": 9.31,
-      "Bolingbrook, IL": 9.23
+    "Palmdale, CA": {
+      "Santa Clarita, CA": 35.35,
+      "Lancaster, CA": 8.49,
+      "Victorville, CA": 52.66
     },
-    "Joliet, IL": {
-      "Chicago, IL": 44.54,
-      "Aurora, IL": 22.48,
-      "Bolingbrook, IL": 13.11,
-      "Orland Park, IL": 19.69,
-      "Kankakee, IL": 35.48,
-      "Bloomington, IL": 95.12
+    "Victorville, CA": {
+      "Palmdale, CA": 52.66,
+      "Hesperia, CA": 8.82,
+      "Barstow, CA": 31.36
     },
-    "Rockford, IL": {
-      "DeKalb, IL": 45.9,
-      "Elgin, IL": 48.5,
-      "Peoria, IL": 140.71
+    "Hesperia, CA": {
+      "Victorville, CA": 8.82,
+      "San Bernardino, CA": 98.46
     },
-    "Springfield, IL": {
-      "Bloomington, IL": 65.77,
-      "Peoria, IL": 72.03,
-      "Decatur, IL": 38.71
+    "San Bernardino, CA": {
+      "Hesperia, CA": 98.46,
+      "Riverside, CA": 138.13,
+      "Menifee, CA": 162.0
     },
-    "Peoria, IL": {
-      "Rockford, IL": 140.71,
-      "Bloomington, IL": 39.58,
-      "Springfield, IL": 72.03
+    "Riverside, CA": {
+      "Los Angeles, CA": 55.02,
+      "San Bernardino, CA": 138.13,
+      "Menifee, CA": 26.83,
+      "Indio, CA": 74.55
     },
-    "Elgin, IL": {
-      "Schaumburg, IL": 14.5,
-      "DeKalb, IL": 35.41,
-      "Rockford, IL": 48.5
+    "Oxnard, CA": {
+      "Los Angeles, CA": 62.47,
+      "Santa Maria, CA": 101.26
     },
-    "Waukegan, IL": {
-      "Arlington Heights, IL": 30.05,
-      "Evanston, IL": 28.05
+    "Burbank, CA": {
+      "Los Angeles, CA": 11.23
     },
-    "Champaign, IL": {
-      "Kankakee, IL": 77.88,
-      "Bloomington, IL": 50.78,
-      "Decatur, IL": 47.15
+    "Long Beach, CA": {
+      "Los Angeles, CA": 24.1
     },
-    "Bloomington, IL": {
-      "Joliet, IL": 95.12,
-      "Peoria, IL": 39.58,
-      "Champaign, IL": 50.78,
-      "Decatur, IL": 45.63,
-      "Springfield, IL": 65.77
+    "Indio, CA": {
+      "Riverside, CA": 74.55,
+      "El Centro, CA": 86.32
     },
-    "Decatur, IL": {
-      "Bloomington, IL": 45.63,
-      "Springfield, IL": 38.71,
-      "Champaign, IL": 47.15
+    "El Centro, CA": {
+      "Indio, CA": 86.32,
+      "El Cajon, CA": 98.49
     },
-    "Evanston, IL": {
-      "Chicago, IL": 14.1,
-      "Skokie, IL": 4.98,
-      "Waukegan, IL": 28.05
+    "El Cajon, CA": {
+      "Escondido, CA": 33.43,
+      "El Centro, CA": 98.49
     },
-    "Schaumburg, IL": {
-      "Palatine, IL": 7.01,
-      "Elgin, IL": 14.5,
-      "Naperville, IL": 26.31
+    "Escondido, CA": {
+      "Oceanside, CA": 21.43,
+      "El Cajon, CA": 33.43
     },
-    "Arlington Heights, IL": {
-      "Des Plaines, IL": 5.76,
-      "Palatine, IL": 4.07,
-      "Waukegan, IL": 30.05
+    "Oceanside, CA": {
+      "Menifee, CA": 43.69,
+      "Escondido, CA": 21.43
     },
-    "Bolingbrook, IL": {
-      "Naperville, IL": 9.23,
-      "Joliet, IL": 13.11
+    "Menifee, CA": {
+      "San Bernardino, CA": 162.0,
+      "Riverside, CA": 26.83,
+      "Oceanside, CA": 43.69
     },
-    "Palatine, IL": {
-      "Arlington Heights, IL": 4.07,
-      "Schaumburg, IL": 7.01
+    "Lancaster, CA": {
+      "Santa Clarita, CA": 44.87,
+      "Palmdale, CA": 8.49,
+      "Bakersfield, CA": 87.59,
+      "Ridgecrest, CA": 85.99
     },
-    "Skokie, IL": {
-      "Chicago, IL": 14.38,
-      "Evanston, IL": 4.98,
-      "Des Plaines, IL": 7.4
+    "Barstow, CA": {
+      "Victorville, CA": 31.36,
+      "Ridgecrest, CA": 82.4,
+      "Bakersfield, CA": 130.32
     },
-    "Des Plaines, IL": {
-      "Chicago, IL": 20.1,
-      "Skokie, IL": 7.4,
-      "Arlington Heights, IL": 5.76
+    "Bakersfield, CA": {
+      "Lancaster, CA": 87.59,
+      "Barstow, CA": 130.32,
+      "Delano, CA": 32.38
     },
-    "Orland Park, IL": {
-      "Chicago, IL": 26.33,
-      "Joliet, IL": 19.69
+    "Delano, CA": {
+      "Bakersfield, CA": 32.38,
+      "Santa Maria, CA": 143.23
     },
-    "Kankakee, IL": {
-      "Joliet, IL": 35.48,
-      "Champaign, IL": 77.88
+    "Ridgecrest, CA": {
+      "Lancaster, CA": 85.99,
+      "Barstow, CA": 82.4
     },
-    "DeKalb, IL": {
-      "Elgin, IL": 35.41,
-      "Rockford, IL": 45.9,
-      "Aurora, IL": 30.59
+    "Santa Maria, CA": {
+      "Delano, CA": 143.23,
+      "Oxnard, CA": 101.26
     }
   }
 }
